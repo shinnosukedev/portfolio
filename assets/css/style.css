@@ -168,3 +168,108 @@ main {
   color: #777;
   background: #f0f0f0;
 }
+
+/* ======================
+   Spatial Projects
+====================== */
+
+.page-header {
+  text-align: center;
+  padding: 4rem 1.5rem 3rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* プロジェクト一覧 */
+
+.projects {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.project-card {
+  text-decoration: none;
+  color: #222;
+}
+
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #ddd;
+  margin-bottom: 1rem;
+}
+
+.project-card h2 {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+
+.project-card p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* ======================
+   Project Detail
+====================== */
+
+.project-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 6rem;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.project-header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.project-meta {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* 写真 */
+
+.project-images {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.project-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* テキスト */
+
+.project-text {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 2;
+  color: #333;
+}
