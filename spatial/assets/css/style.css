@@ -55,7 +55,7 @@
 }
 
 .project-thumb {
-  width width: 100%;
+  width: 100%;
   height: 220px;
   background-image: url("/assets/images/spatial/project-01/01.jpg");
   background-size: cover;
