@@ -1,1 +1,49 @@
 
+/* =========================
+   Spatial Projects – Index
+   ========================= */
+
+.projects {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.project-thumb {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-thumb:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.project-thumb h3 {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .projects {
+    margin: 40px auto;
+  }
+}
