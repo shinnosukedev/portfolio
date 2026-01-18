@@ -126,4 +126,34 @@
     gap: 2rem;
   }
 }
+/* ======================
+   Project Detail – Safari Fix
+====================== */
+
+.project-images {
+  max-width: 860px;
+  margin: 0 auto 4rem;
+  display: block; /* Safari対策：flexを使わない */
+}
+
+.project-images img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---- Mobile Safari ---- */
+
+@media (max-width: 768px) {
+  .project-images {
+    max-width: 100%;
+    margin: 0 auto 3rem;
+  }
+
+  .project-images img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
