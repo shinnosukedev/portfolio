@@ -60,3 +60,70 @@
     margin: 40px auto;
   }
 }
+
+/* ======================
+   Project Detail Page
+====================== */
+
+.project-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 6rem;
+}
+
+/* ---- Header ---- */
+
+.project-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.project-header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+
+.project-meta {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* ---- Images ---- */
+
+.project-images {
+  max-width: 860px;
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---- Text ---- */
+
+.project-text {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 2;
+  color: #333;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 600px) {
+  .project-detail {
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  .project-images {
+    gap: 2rem;
+  }
+}
+
