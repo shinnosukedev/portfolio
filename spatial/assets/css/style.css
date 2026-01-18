@@ -53,14 +53,6 @@
   color: #555;
 }
 
-/* ---- Responsive ---- */
-
-@media (max-width: 600px) {
-  .projects {
-    margin: 40px auto;
-  }
-}
-
 /* ======================
    Project Detail Page
 ====================== */
@@ -115,19 +107,6 @@
   color: #333;
 }
 
-/* ---- Responsive ---- */
-
-@media (max-width: 600px) {
-  .project-detail {
-    padding: 3rem 1.25rem 4rem;
-  }
-
-  .project-images {
-    gap: 2rem;
-  }
-}
-
-
 /* ======================
    Project Detail – Universal Layout
 ====================== */
@@ -144,11 +123,4 @@
   max-width: 100%;
   height: auto;
    
-}
-
-@media (max-width: 768px) {
-  .project-images {
-    max-width: 100%;
-    margin-bottom: 3rem;
-  }
 }
