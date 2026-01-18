@@ -1,4 +1,3 @@
-
 /* =========================
    Spatial Projects – Index
    ========================= */
@@ -15,65 +14,55 @@
   gap: 40px;
 }
 
+/* ---- Project Card ---- */
+
+.project-card {
+  display: flex;
+  flex-direction: column;      /* ← 重なり防止の核心 */
+  text-decoration: none;
+  color: #111;
+}
+
+/* ---- Thumbnail ---- */
+
 .project-thumb {
   width: 100%;
-  aspect-ratio: 16 / 9;       /* 画面に対して自然な比率 */
-  max-height: 260px;          /* 大きくなりすぎない */
-  min-height: 140px;          /* 小さくなりすぎない */
+  aspect-ratio: 16 / 9;
+  max-height: 260px;
+  min-height: 140px;
 
   background-image: url("/assets/images/spatial/project-01/monument1.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 4px;
   margin-bottom: 12px;
+
+  transition: transform 0.4s ease, opacity 0.3s ease;
 }
 
-
-.project-thumb:hover {
-  transform: translateY(-4px);
-  opacity: 0.9;
+.project-card:hover .project-thumb {
+  transform: scale(1.02);
+  opacity: 0.95;
 }
 
-.project-thumb img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 4px;
-}
+/* ---- Text ---- */
 
-.project-thumb h3 {
-  margin-top: 12px;
-  font-size: 16px;
+.project-card h2 {
+  margin: 6px 0 4px;
+  font-size: 18px;
   font-weight: 500;
-  letter-spacing: 0.04em;
 }
 
-/* Responsive adjustment */
+.project-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ---- Responsive ---- */
+
 @media (max-width: 600px) {
   .projects {
     margin: 40px auto;
   }
 }
-
-.project-card {
-  display: block;
-  text-decoration: none;
-  color: #111;
-}
-
-.project-thumb {
-  width: 100%;
-  height: 220px;
-  background-image: url("/assets/images/spatial/project-01/01.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 4px;
-  margin-bottom: 12px;
-}
-
-.project-card:hover .project-thumb {
-  transform: scale(1.02);
-  transition: transform 0.4s ease;
-}
-
-
