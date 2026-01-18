@@ -189,9 +189,21 @@ main {
   color: #666;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #222;
+}
+
+.project-thumb {
+  flex-shrink: 0;
+}
+
+
+
 /* プロジェクト一覧 */
 
-.projects {
   max-width: 1100px;
   margin: 0 auto;
   padding: 2rem 1.5rem 6rem;
@@ -201,6 +213,8 @@ main {
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: #222;
 }
@@ -208,8 +222,10 @@ main {
 .project-thumb {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background: #ddd;
+  background-size: cover;
+  background-position: center;
   margin-bottom: 1rem;
+  flex-shrink: 0;
 }
 
 .project-card h2 {
@@ -222,7 +238,6 @@ main {
   font-size: 0.8rem;
   color: #666;
 }
-
 /* ======================
    Project Detail
 ====================== */
