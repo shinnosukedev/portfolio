@@ -16,11 +16,18 @@
 }
 
 .project-thumb {
-  display: block;
-  text-decoration: none;
-  color: #111;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 100%;
+  aspect-ratio: 16 / 9;       /* 画面に対して自然な比率 */
+  max-height: 260px;          /* 大きくなりすぎない */
+  min-height: 140px;          /* 小さくなりすぎない */
+
+  background-image: url("/assets/images/spatial/project-01/monument1.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 12px;
 }
+
 
 .project-thumb:hover {
   transform: translateY(-4px);
@@ -63,4 +70,10 @@
   border-radius: 4px;
   margin-bottom: 12px;
 }
+
+.project-card:hover .project-thumb {
+  transform: scale(1.02);
+  transition: transform 0.4s ease;
+}
+
 
